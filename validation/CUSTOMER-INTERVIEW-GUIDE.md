@@ -1,6 +1,17 @@
 # Customer interview guide
 
-Prepared 2026-11-20. Status: draft for review. No interviews have been scheduled.
+Prepared 2026-11-20. Updated 2026-11-20 with Gate 0 answers. Status: draft. No interviews have been scheduled and no one has been contacted. Customer outreach is NOT AUTHORIZED. The interview lead is not decided (UNKNOWN, see GATE-0-OPEN-ITEMS.md section 2).
+
+## Gate 0 safeguards that apply to every interview
+
+CONFIRMED at Gate 0. CCS has existing med spa clients, and they are a potential warm-contact pool. To keep agency goodwill from being read as product demand:
+
+1. Maximum 5 warm contacts among 20 interviews.
+2. Source channel and relationship are recorded for every participant before the call starts.
+3. Warm and cold results are tallied separately in every table.
+4. A positive comment is not demand. Do not report "they liked it" as a finding.
+5. What counts: money they already spend on this job, a problem they describe without being asked, and whether the same problem repeats across participants.
+6. If the interviewer is the participant's own CCS account manager, record that. It is the most biased setting there is.
 
 ## Purpose
 
@@ -27,7 +38,17 @@ Find out how independent med spas actually handle a new inquiry, what it costs t
 | Roughly how many new inquiries do you get a month across calls, forms and messages? | 30 or more, or they run paid ads |
 | What's your role? | Owner, practice manager or front-desk lead |
 | What do you use for booking? | Any. Record it, the sample needs at least 4 platforms |
-| Have you worked with Clear Choice Systems before? | Record yes or no. No more than 5 of 20 can be yes |
+| Have you worked with Clear Choice Systems before, or were you referred by someone who has? | Record the relationship code below. No more than 5 of 20 can be warm |
+
+### Source and relationship, recorded for every participant
+
+| Field | Values |
+|---|---|
+| Source channel | Existing CCS client list, referral, audit disclosure, LinkedIn, Instagram, community or group post, in person, other |
+| Relationship code | WARM-1 current CCS client. WARM-2 former CCS client. WARM-3 referred by a CCS client or a personal contact of anyone at CCS. COLD-1 cold outreach. COLD-2 reached through the audit disclosure. COLD-3 responded to a community post |
+| Warm or cold | WARM codes are warm. COLD codes are cold |
+| Interviewer's relationship to participant | None, acquaintance, or their CCS account manager |
+| What CCS currently sells this participant | For WARM-1 only. A participant already paying CCS for lead follow-up cannot give clean evidence on willingness to pay for it |
 
 ## Opening (2 minutes)
 
@@ -103,7 +124,7 @@ Price sensitivity. Ask all four, in this order, before showing any price:
 34. At what monthly price would it start to feel expensive, but you'd still consider it?
 35. At what monthly price is it too expensive to consider at all?
 
-Then show the three packages from PILOT-OFFER.md, same prices to everyone:
+Then show the three packages from PILOT-OFFER.md, same prices to everyone. Show the package table only, as a concept to react to. Do not mention a money-back guarantee, a price lock or any overage rate: the first two are CONDITIONAL and the third is DEFERRED. Do not describe the product as HIPAA compliant or compliant with any law. If asked, the accurate answer is that compliance review is still to be done and no pilot starts before it is.
 
 36. Which of these would you pick, if any? Why that one?
 37. What would you remove to pay less? What would you pay more to add?
@@ -134,7 +155,11 @@ Within 24 hours of each call, record one row in the interview log in VALIDATION-
 | Interview number, date, role | |
 | State, locations, staff count | |
 | Booking platform | |
+| Source channel | How this participant was found |
+| Relationship code | WARM-1, WARM-2, WARM-3, COLD-1, COLD-2 or COLD-3 |
 | Warm or cold contact | Warm means prior CCS relationship or referral |
+| Interviewer and interviewer's relationship to participant | |
+| What CCS currently sells this participant | WARM-1 only |
 | Inquiries per month, and whether the number was looked up or recalled | |
 | Monthly ad spend | |
 | Top three problems, verbatim, in order | From question 22 |
@@ -159,6 +184,9 @@ Within 24 hours of each call, record one row in the interview log in VALIDATION-
 
 - Count what people did, not what they said they would do. "I'd pay $300" is weak. "I pay Podium $450 and I'm annoyed" is strong.
 - A stated willingness to pay is not a sale. The only real price evidence in this phase is a paid pilot.
-- Separate warm and cold contacts in every tally.
+- Separate warm and cold contacts in every tally. Gate 2 has to pass on the cold-only tally as well as overall.
+- Positive comments about the idea are not evidence of demand and are never reported as such. Report three things: what they spend today on this job, what they described unprompted, and how many participants described the same thing.
+- A problem counts as repeated when at least 5 participants describe it unprompted and at least 3 of them are cold contacts (ASSUMPTION, to be agreed with the other thresholds).
+- Evidence from WARM-1 participants shows what existing clients value in CCS. Label it that way.
 - If fewer than half put lead follow-up in their top three unprompted, that is a stop-or-reposition signal under DECISION-GATES.md, even if they liked the offer when it was described.
 - Watch for a different problem that keeps coming up. If 8 of 20 raise the same thing nobody asked about, write it down in the scorecard. That is how the real opportunity usually shows itself.

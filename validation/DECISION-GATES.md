@@ -1,6 +1,8 @@
 # Decision gates
 
-Prepared 2026-11-20. Status: draft for review. No gate has been passed.
+Prepared 2026-11-20. Updated 2026-11-20 with Gate 0 answers. Status: draft. No gate has been passed. **Gate 0: NOT PASSED.**
+
+Current authorization is limited to documentation updates, analysis and preparation of decision materials. Recorded answers and decisions are in GATE-0-DECISIONS.md. What is still open is in GATE-0-OPEN-ITEMS.md.
 
 Each gate is a point where work stops until a decision is made on evidence. A gate states what evidence is needed, what counts as pass or fail, and exactly what a pass authorizes. Nothing downstream of a gate starts before that gate is approved in writing.
 
@@ -12,8 +14,25 @@ Metric codes (D1, W1 and so on) refer to VALIDATION-SCORECARD.md. Every threshol
 2. No purchase or paid commitment without its own approval, even after a gate passes.
 3. Existing research in `reports/` and `research_notes/` stays unchanged.
 4. Thresholds are fixed at Gate 0. Changes go in the threshold change log with a reason.
-5. Any compliance fail (C1 to C4, O6) stops the pilots at once, whatever gate is current.
+5. Any compliance fail (C0 to C5, O6) stops the pilots at once, whatever gate is current.
 6. A gate with missing evidence is not a pass. "We didn't get to it" is a hold.
+7. An UNKNOWN is never treated as an assumption. A gate that depends on an UNKNOWN item holds until the item is established.
+8. Evidence from existing CCS relationships is reported separately from evidence from strangers and cannot by itself pass Gate 2, Gate 5 or outcome A at Gate 7.
+9. No material describes the product as HIPAA compliant, or compliant with any law, before verification and legal review.
+10. No pull request is created and no branch is merged without explicit instruction.
+
+## Current status of each gate
+
+| Gate | Status | Held by |
+|---|---|---|
+| 0 | NOT PASSED | Open items in GATE-0-OPEN-ITEMS.md |
+| 1 | NOT AUTHORIZED | Gate 0 |
+| 2 | NOT AUTHORIZED | Gate 0, interview owner UNKNOWN |
+| 3 | NOT AUTHORIZED | Gate 0, audit owner UNKNOWN, mystery shopping not approved |
+| 4 | BLOCKED | No lawyer, GoHighLevel plan and HIPAA-related scope UNKNOWN, cost inputs UNKNOWN |
+| 5 | NOT AUTHORIZED | Gate 4 |
+| 6 | NOT AUTHORIZED | Gate 5 |
+| 7 | NOT AUTHORIZED | Gate 6 |
 
 ## Gate overview
 
@@ -30,17 +49,51 @@ Metric codes (D1, W1 and so on) refer to VALIDATION-SCORECARD.md. Every threshol
 
 ## Gate 0: plan approval
 
-**Evidence required**
-- The five validation documents reviewed.
-- Thresholds in the scorecard accepted or edited.
-- A decision on each spending line in VALIDATION-PLAN.md section 9.
-- Answers to the open questions at the end of this file.
+**Status: NOT PASSED.** Partly decided on 2026-11-20.
 
-**Pass:** written approval of the plan and thresholds.
+**Decided so far** (full record in GATE-0-DECISIONS.md)
 
-**Pass authorizes:** owner-voice desk research, building the audit list, interview recruiting using the reviewed outreach message, written verification requests to booking platforms and GoHighLevel support, reading real messaging rates from the CCS agency account.
+| Item | Status |
+|---|---|
+| No standalone SaaS development at this stage | CONFIRMED |
+| Validation phase | Approved in principle, within the authorization boundary |
+| CCS has med spa clients | CONFIRMED |
+| Pilot geography: United States | CONFIRMED |
+| Repository: Hike SaaS Lab | CONFIRMED |
+| Warm-contact cap of 5 in 20 interviews, and at least 3 of 5 pilots with no CCS relationship | CONFIRMED |
+| 30-day money-back guarantee | APPROVED IN PRINCIPLE, CONDITIONAL |
+| 12-month pilot price lock | APPROVED IN PRINCIPLE, CONDITIONAL |
+| $0.02 SMS overage | DEFERRED, not approved |
 
-**Does not authorize:** presenting the offer, taking money, configuring pilot sub-accounts, engaging counsel on a paid basis unless that line was approved.
+**Still required for Gate 0 to pass**
+
+| Requirement | Status |
+|---|---|
+| CCS GoHighLevel plan and capabilities established by read-only check | UNKNOWN |
+| Interview lead, audit runner and decision owner named | UNKNOWN |
+| Weekly hours committed, at or above the minimum workable pace | UNKNOWN |
+| Validation budget set, including a decision on legal review | UNKNOWN |
+| Thresholds in the scorecard accepted or edited | UNKNOWN |
+| A decision on each spending line in VALIDATION-PLAN.md section 9 | NOT AUTHORIZED, all lines |
+| Number, platforms and states of existing CCS med spa clients | UNKNOWN |
+| Loaded labour rate | UNKNOWN |
+| Product name | UNKNOWN |
+
+**Pass:** every row above is established, and the plan and thresholds are approved in writing.
+
+The first version of this gate bundled several authorizations into one pass. They are now separate, because the current boundary allows none of them and each carries a different risk.
+
+| Step | What it covers | Needs | Status |
+|---|---|---|---|
+| 0a | Documentation, analysis, decision materials | Nothing further | Authorized |
+| 0b | Read-only inspection of the CCS GoHighLevel account (checklist parts A to F3) and reading public vendor documentation | Explicit go-ahead | Not yet given |
+| 0c | Owner-voice desk research on public sites | Explicit go-ahead, a named owner | NOT AUTHORIZED |
+| 0d | Vendor contact: written verification requests to GoHighLevel and booking platforms | Explicit go-ahead | NOT AUTHORIZED |
+| 0e | Customer outreach: interview recruiting, including existing CCS clients | Gate 0 passed, a named interview lead | NOT AUTHORIZED |
+| 0f | Mystery shopping: the response-time audit | Gate 0 passed, a named audit runner, a specific approval | NOT AUTHORIZED |
+| 0g | Any spending, including engaging counsel | A budget decision and a specific approval per line | NOT AUTHORIZED |
+
+**A Gate 0 pass does not authorize:** presenting the offer, taking money, configuring pilot sub-accounts, GoHighLevel account changes, processing live customer data, sending live messages, or application development.
 
 ## Gate 1: owner voice and integration reality
 
@@ -94,16 +147,23 @@ Metric codes (D1, W1 and so on) refer to VALIDATION-SCORECARD.md. Every threshol
 
 This is the hard stop before any money or any lead data moves.
 
+**Status: BLOCKED.** CCS has no lawyer for US messaging and health-data compliance, the GoHighLevel plan and its HIPAA-related scope are UNKNOWN, and the cost inputs are UNKNOWN. COMPLIANCE-GATE.md is the formal blocker. Until it is cleared, no live marketing message is sent and no sensitive customer or patient data is processed.
+
 **Evidence required**
-- C1: written legal sign-off on consent language, the missed-call text-back question, quiet hours, opt-out handling and which states are in scope.
-- C2: GoHighLevel HIPAA posture and BAA confirmed in writing, with its real cost.
-- A BAA template for CCS to sign with each spa.
-- The cost model in VALIDATION-PLAN.md section 8 rebuilt with real GoHighLevel rates and the real CCS labour rate.
+- C0: a qualified US lawyer engaged.
+- C1: written legal sign-off on consent language, the missed-call text-back question, quiet hours, opt-out handling, A2P 10DLC registration approach, privacy and health-data handling, and which states are in scope.
+- C2: GoHighLevel's HIPAA-related scope for the CCS account confirmed in writing by the vendor, with its real cost, and reviewed by the lawyer for sufficiency. It is not assumed that CCS is eligible or that an add-on is enough.
+- The lawyer's answer on whether a business associate agreement is needed, and if so a template.
+- The completed GHL-VERIFICATION-CHECKLIST.md, with every finding marked by source type.
+- The cost inputs table in VALIDATION-SCORECARD.md filled from primary sources, and the cost model in VALIDATION-PLAN.md section 8 rebuilt on them.
+- A recommended rate for additional usage, built on those inputs. Until then the rate stays DEFERRED.
+- Final terms for the 30-day guarantee, legally reviewed, and final commercial terms for the 12-month price lock. Both are CONDITIONAL until then.
 - An onboarding runbook written for at least one booking platform.
-- Decisions on the six items listed in PILOT-OFFER.md under "items that need a decision".
+- Decisions on the items listed in PILOT-OFFER.md under "items that need a decision".
+- Lawyer-approved wording for anything said about compliance (C5).
 
 **Pass**
-- C1 and C2 received.
+- C0, C1, C2 and C5 met.
 - Rebuilt cost model shows a projected contribution margin of 40% or more at $297 at pilot scale (P6) and 60% or more at 50 spas (P7).
 - Spending for the platform tier, HIPAA add-on and legal work approved.
 
@@ -117,7 +177,7 @@ This is the hard stop before any money or any lead data moves.
 
 **Evidence required:** offer funnel, per-prospect log, objection tally.
 
-**Pass:** W1, W2 and W3 pass. Five paid pilots at $297 or more, three of them cold, within about 100 qualified conversations.
+**Pass:** W1, W2 and W3 pass. Five paid pilots at $297 or more, at least three of them with no CCS relationship (relationship codes COLD-1 to COLD-3), within about 100 qualified conversations. A current CCS client (WARM-1) who already buys lead follow-up from CCS does not count toward the five (W6).
 
 **Partial**
 - Five paid, fewer than three cold. Run the pilots, but treat the result as an agency finding until cold sales are shown. Gate 7 cannot return "repeatable business" on this evidence alone.
@@ -201,14 +261,20 @@ Next step: write up what was learned, keep the research and the logs, and close 
 
 Do not average it into a pass. State which outcome each block points to and choose the more conservative one. Extending pilots by 60 days is acceptable once, with the specific metric that needs more data named in advance.
 
-## Open questions to settle at Gate 0
+## Gate 0 questions and their answers
 
-1. Does CCS have existing med spa clients? How many, and on which booking platforms? This sets the warm-contact cap and where the first runbook is written.
-2. Which GoHighLevel plan is the agency on today? If it is already the $497 tier, the platform line is not an added cost.
-3. What is the real loaded hourly cost of the people who would onboard and support pilots? The cost model uses an assumed $40.
-4. Who runs the interviews and the audit, and how many hours a week can go to this for six weeks?
-5. Is there a budget for interview thank-you gifts, the AmSpa report and legal review?
-6. Is there a lawyer CCS already uses for TCPA and health-data questions?
-7. Are the three commercial commitments in the pilot offer acceptable as drafted: the 30-day money-back guarantee, the 12-month price lock and the $0.02 overage rate?
-8. What is the product called? A name separate from the agency is recommended.
-9. Which states are in scope for the first pilots?
+Asked in the first version of this file. Answers recorded 2026-11-20 exactly as given. Details and next steps are in GATE-0-DECISIONS.md and GATE-0-OPEN-ITEMS.md.
+
+| # | Question | Answer | Status |
+|---|---|---|---|
+| 1 | Does CCS have existing med spa clients? How many, and on which booking platforms? | Yes. Number and platforms not given | CONFIRMED in part. Count and platforms UNKNOWN |
+| 2 | Which GoHighLevel plan is the agency on today? | Other / not sure | UNKNOWN |
+| 3 | Loaded hourly cost of the people who would onboard and support pilots? | Not answered | UNKNOWN |
+| 4 | Who runs the interviews and the audit, and how many hours a week? | Owner not decided. Weekly time not established | UNKNOWN |
+| 5 | Is there a budget for thank-you gifts, the AmSpa report and legal review? | Not established | UNKNOWN. No spending authorized |
+| 6 | Is there a lawyer CCS already uses for TCPA and health-data questions? | No | CONFIRMED none. Live pilots BLOCKED |
+| 7a | 30-day money-back guarantee | Approved in principle, conditional | APPROVED IN PRINCIPLE, CONDITIONAL |
+| 7b | 12-month price lock | Approved in principle, conditional | APPROVED IN PRINCIPLE, CONDITIONAL |
+| 7c | $0.02 overage rate | Deferred, not approved | DEFERRED |
+| 8 | Product name | Not answered. The repository is named Hike SaaS Lab, which is the repository, not the product | UNKNOWN |
+| 9 | Which states are in scope for the first pilots? | United States | CONFIRMED at country level. States UNKNOWN pending legal review |

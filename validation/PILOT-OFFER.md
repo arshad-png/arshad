@@ -1,8 +1,22 @@
 # Pilot offer
 
-Prepared 2026-11-20. Status: draft for review. This offer has not been shown to anyone. Every price and term is a hypothesis to test and a proposal to approve, not a validated or committed figure.
+Prepared 2026-11-20. Updated 2026-11-20 with Gate 0 decisions. Status: draft, NOT FOR DISTRIBUTION. This offer has not been shown to anyone. Every price and term is a hypothesis to test and a proposal to approve, not a validated or committed figure.
 
 Internal sections are marked. The customer-facing draft starts at "The offer as a prospect would read it".
+
+## Internal: Gate 0 status of the commercial terms
+
+| Term | Status | What it means for this document |
+|---|---|---|
+| 30-day money-back guarantee | APPROVED IN PRINCIPLE, CONDITIONAL | Draft business terms are defined below. Legal review is required before it is published or offered |
+| 12-month pilot price lock | APPROVED IN PRINCIPLE, CONDITIONAL | Draft scope is defined below. Final commercial terms are required before any pilot agreement is issued |
+| $0.02 SMS overage | DEFERRED, not approved | Removed from the customer-facing draft. No overage rate is quoted anywhere in this document |
+| Business associate agreement | BLOCKED | Whether one is needed and whether the vendor chain supports it is not established. See COMPLIANCE-GATE.md |
+| Package prices of $197, $297, $497 | Hypotheses to test | Not final prices. Margin at these prices is UNKNOWN until real costs are documented |
+| Product name | UNKNOWN | The draft uses no product name |
+| Pilot geography | CONFIRMED United States | States in scope are UNKNOWN pending legal review |
+
+Nothing in this document may be sent to a prospect, published or used in an interview as an offer until COMPLIANCE-GATE.md is cleared and final commercial terms are approved. The package table alone may be shown in interviews as a concept to react to, with no guarantee, price lock or overage rate stated.
 
 ## Internal: design principles
 
@@ -59,23 +73,77 @@ The last row is the hard one. Pilot spas will ask for these. The answer during t
 |---|---|---|---|
 | Setup fee | $0 | $500 one-time, alternated by prospect | Whether a fee filters for serious buyers or deters them |
 | Commitment | Month-to-month | 12 months prepaid for the price of 10, offered as an option | How much the no-contract promise is worth |
-| Usage | Flat with a cap, overage only with written opt-in | None in the pilot | Tolerance for caps |
-| Guarantee | 30-day money back | None | Kept constant, not tested, to keep arms few |
+| Usage | Flat with a cap. Additional usage only with written opt-in, at a rate that is DEFERRED | None in the pilot | Tolerance for caps |
+| Guarantee | 30-day money back, CONDITIONAL | None | Kept constant, not tested, to keep arms few |
 
 Headline prices are the same for every prospect. See VALIDATION-PLAN.md section 7 for why.
 
+The customer-facing draft below is written for the no-setup-fee arm. A second version for the $500 setup-fee arm would differ in that one line. The first version of this document stated "no setup fee" in the customer text without saying a second arm existed. That inconsistency is recorded in GATE-0-DECISIONS.md.
+
+## Internal: 30-day money-back guarantee, draft business terms
+
+Status: APPROVED IN PRINCIPLE, CONDITIONAL. These are business terms in plain language for a lawyer to review. They are not legal wording, and none of this may be published or offered before legal review.
+
+| Element | Draft term | Open point |
+|---|---|---|
+| Eligibility | A spa on its first pilot subscription, on any of the three packages, with fees paid up to date | Whether a multi-location group gets one guarantee or one per location |
+| What is refunded | The first month's package fee | Whether a setup fee, where charged, is refundable |
+| Window | Request made within 30 days | Day the clock starts: first payment date or go-live date. Not decided. Go-live is fairer to the spa because carrier registration can delay the start |
+| Conditions | Request made in writing by the account owner. No reason has to be given | Whether completion of onboarding is a condition. The draft says no |
+| Refund method | To the original payment method | Number of days to pay it. Not decided |
+| Effect | The subscription ends when the refund is requested. Automated messaging stops. The spa receives its data export | How long data is kept after the end. For counsel |
+| Exclusions | Third-party charges already incurred for the spa (carrier registration fees, additional usage the spa opted into). Services outside the package. A second or later subscription by the same business. Accounts ended for breaking the messaging rules, for example loading contacts who did not consent | Whether third-party registration fees are absorbed by CCS as goodwill. Not decided |
+| Cancellation procedure, with or without a refund | Written notice by email from the account owner. Confirmation sent in reply. No phone call, no retention process, no fee. Outside the 30-day window, cancellation takes effect at the end of the paid month | The contact address for notices does not exist yet |
+
+Cost if offered: up to one month's fee per pilot. At 5 pilots on Convert that is up to $1,485 (ESTIMATE).
+
+## Internal: 12-month pilot price lock, draft scope
+
+Status: APPROVED IN PRINCIPLE, CONDITIONAL. Final commercial terms are required before any pilot agreement is issued.
+
+| Element | Draft term | Open point |
+|---|---|---|
+| What is locked | The monthly price of the agreed package, for the features and scope listed for that package on the day the spa signs | None |
+| What it covers | One location, the package's included users and the package's included monthly SMS segments | None |
+| Included usage | The monthly segment allowance in the package table. It is part of the locked price | None |
+| Additional usage | Anything above the allowance. It is not part of the lock. It is billed only if the spa opts in, in writing, at a published rate | The rate is DEFERRED. No figure is approved |
+| Period | 12 months | Start point: first pilot payment or the end of the 90-day pilot. Not decided |
+| Third-party cost changes | Carrier and registration charges are set by third parties. If they change materially, the spa is told in writing, with the old and new figures, before any change to what it pays. The package price itself does not change during the lock | Notice period, and whether CCS absorbs small changes. Not decided |
+| New features | New features are optional. A spa on a locked price keeps its package as signed and is not moved to a higher price because features were added | None |
+| Material scope changes | A second location, a move to a different package, or a custom request outside the package ends the lock for the changed part only, by written agreement | What counts as material needs a definition in the final terms |
+| Transfer | The lock belongs to the business that signed | Change of ownership. For final terms |
+
+## Internal: additional usage (overage)
+
+Status: DEFERRED. NOT APPROVED. The first version of this document proposed $0.02 per segment. That figure was never a confirmed or approved customer price and has been withdrawn.
+
+No rate will be recommended until these are documented:
+
+| Input | Status | Where it comes from |
+|---|---|---|
+| Actual LC Phone and SMS charges for the CCS account | UNKNOWN | GHL-VERIFICATION-CHECKLIST.md part C |
+| Segment-based billing rules and carrier fees | UNKNOWN | Checklist C4 and C6 |
+| A2P 10DLC registration and campaign costs | UNKNOWN | Checklist C9 to C11 |
+| Expected usage per location | UNKNOWN | Checklist C17 for a rough guide, pilots for the real figure |
+| Gross margin at $197, $297 and $497 | UNKNOWN | Rebuilt cost model, after the above and the real labour rate |
+
+Until then the customer-facing position is: the package includes a stated number of segments, the spa is told before the allowance is reached, and nothing above it is sent or billed without the spa's written agreement to a published rate.
+
 ## Internal: items that need a decision before this is shown to anyone
 
-1. Overage rate. The draft says $0.02 per segment, only after the spa opts in. That figure is an ESTIMATE set above an estimated cost of about $0.012 to $0.013 and has to be reset once real GoHighLevel rates are read from the agency account.
-2. Founding-customer price lock. The draft locks the pilot price for 12 months after the pilot. That is a real commercial commitment.
-3. The 30-day money-back guarantee. Also a real commitment.
-4. Product name. The research recommends a distinct name so it does not read as an agency-resold CRM. None is proposed here.
-5. Legal entity, payment method, and who signs the BAA.
-6. Whether Texas, Florida and Washington spas are in or out of the first pilots, pending counsel.
+1. Additional usage rate. DEFERRED, see above.
+2. Price lock final terms. CONDITIONAL, see above.
+3. Guarantee final terms and legal review. CONDITIONAL, see above.
+4. Product name. UNKNOWN. The research recommends a distinct name so it does not read as an agency-resold CRM. None is proposed here.
+5. Legal entity, payment method and the address for notices. UNKNOWN.
+6. Which US states are in scope for the first pilots. UNKNOWN pending counsel.
+7. Whether a business associate agreement is needed and can be supported. BLOCKED.
 
-Flagging 1, 2 and 3 loudly: they are written as sensible defaults, and each one costs money if it is wrong.
+Items 1, 2 and 3 are real money commitments. None of them is final.
 
 ## The offer as a prospect would read it
+
+Draft. NOT FOR DISTRIBUTION. Lines marked CONDITIONAL, DEFERRED or BLOCKED are not yet offers and must not be shown until their conditions are met.
 
 ### What this is
 
@@ -116,12 +184,16 @@ A segment is one standard text of up to 160 characters. Longer messages count as
 
 ### Terms
 
-- 90-day pilot, billed monthly, month-to-month. No annual contract and no auto-renewal into one.
-- No setup fee during the pilot.
-- Cancel any time by email. Cancellation takes effect at the end of the paid month. No call, no buyout.
-- 30-day money-back guarantee on the first month.
-- If you stay after the pilot, your pilot price holds for 12 months.
-- If you reach your included messages, we tell you before anything pauses. Extra messages are $0.02 per segment and only if you say yes in writing.
+| Term | Draft wording | Status |
+|---|---|---|
+| Length and billing | 90-day pilot, billed monthly, month-to-month. No annual contract and no auto-renewal into one | Draft |
+| Setup fee | No setup fee during the pilot | Draft, no-setup-fee arm |
+| Cancellation | Cancel any time by email. Cancellation takes effect at the end of the paid month. No call, no buyout | Draft, subject to legal review |
+| Guarantee | 30-day money-back guarantee on the first month's package fee | CONDITIONAL. Not to be shown before legal review |
+| Price lock | Your package price holds for 12 months for the package, features and scope you signed up for. It covers your included messages. It does not cover additional usage | CONDITIONAL. Not to be shown before final commercial terms |
+| Included messages | Your package includes a set number of text segments each month. We tell you before you reach it | Draft |
+| Additional usage | Nothing above your included messages is sent or billed unless you agree in writing to a published rate first | Rate DEFERRED. No rate is quoted |
+| Third-party costs | Carriers set registration and messaging charges. If those change in a way that affects you, we tell you in writing with the old and new figures before anything changes on your bill | CONDITIONAL, part of the price lock terms |
 
 ### What we measure, and how
 
@@ -157,9 +229,13 @@ We publish exactly what we can and can't read from each booking platform, and we
 
 ### Your data
 
-Your leads and their consent records are yours. You can export them at any time, and you get a full export if you cancel. We do not sell or share lead data, and we do not use it to market to your patients. We sign a business associate agreement with you before any lead data flows.
+Your leads and their consent records are yours. You can export them at any time, and you get a full export if you cancel. We do not sell or share lead data, and we do not use it to market to your patients.
+
+Status of this section: draft. The export promise depends on a GoHighLevel capability that is not yet verified (checklist item B8). The first version of this document also promised a business associate agreement. That line is withdrawn and BLOCKED: whether an agreement is needed, and whether the vendor chain supports one, has not been established. No statement about HIPAA or any other legal compliance appears in this offer until a lawyer has approved the wording.
 
 ### Consent and texting
+
+Status: draft, BLOCKED pending legal review of the consent wording, opt-out handling and quiet hours.
 
 Leads only get automated texts if they agreed to them on the form. The consent wording names your spa, says what they'll receive and how often, and tells them to reply STOP to opt out and HELP for help, and that message and data rates may apply. Every text stops as soon as someone replies STOP. No automated texts go out late at night or early in the morning.
 

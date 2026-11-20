@@ -1,8 +1,27 @@
 # Validation execution plan
 
-Prepared 2026-11-20. Status: draft for review. Nothing in this plan has been started.
+Prepared 2026-11-20. Updated 2026-11-20 with Gate 0 answers. Status: draft. Nothing in this plan has been started. Repository: Hike SaaS Lab.
 
-Companion files: CUSTOMER-INTERVIEW-GUIDE.md, PILOT-OFFER.md, VALIDATION-SCORECARD.md, DECISION-GATES.md. Source research: `reports/Med spa SaaS opportunity research.md` and `research_notes/` (unchanged by this plan).
+Companion files: CUSTOMER-INTERVIEW-GUIDE.md, PILOT-OFFER.md, VALIDATION-SCORECARD.md, DECISION-GATES.md, GATE-0-DECISIONS.md, GATE-0-OPEN-ITEMS.md, GHL-VERIFICATION-CHECKLIST.md, COMPLIANCE-GATE.md. Source research: `reports/Med spa SaaS opportunity research.md` and `research_notes/` (unchanged by this plan).
+
+## Gate 0 status
+
+**Gate 0: NOT PASSED.** Current authorization covers documentation, analysis and decision materials only. Every workstream below is prepared and none is authorized to start.
+
+| Item | Status |
+|---|---|
+| CCS has med spa clients | CONFIRMED. Count, platforms and states UNKNOWN |
+| CCS GoHighLevel plan | UNKNOWN. See GHL-VERIFICATION-CHECKLIST.md |
+| Interview and audit owner | UNKNOWN. See GATE-0-OPEN-ITEMS.md section 2 |
+| US messaging and health-data lawyer | None exists (CONFIRMED). Live pilots BLOCKED. See COMPLIANCE-GATE.md |
+| Pilot geography | CONFIRMED United States. States in scope UNKNOWN pending legal review |
+| Weekly time available | UNKNOWN. See GATE-0-OPEN-ITEMS.md section 3 |
+| Validation budget | UNKNOWN. No spending authorized. See GATE-0-OPEN-ITEMS.md section 4 |
+| 30-day money-back guarantee | APPROVED IN PRINCIPLE, CONDITIONAL |
+| 12-month pilot price lock | APPROVED IN PRINCIPLE, CONDITIONAL |
+| $0.02 SMS overage | DEFERRED, not approved |
+
+Where this plan gives timings, hours or costs, they describe what the work needs. They are not commitments, and none has been approved.
 
 ## 1. What this phase has to answer
 
@@ -27,7 +46,11 @@ These apply to the whole phase until a decision gate says otherwise.
 | No changes to production systems | No edits to live client sub-accounts or live sites. Pilot configuration goes in a new, separate sub-account and snapshot |
 | No purchases or paid commitments | Every item that costs money is listed in section 9 and needs its own approval |
 | Research preserved | `reports/` and `research_notes/` are read-only. New findings go in new files under `validation/` |
-| No outreach, no external commitments | No owner, vendor, lawyer or platform is contacted until Gate 0 is approved. Outreach scripts in this plan are drafts |
+| No outreach, no external commitments | No owner, vendor, lawyer or platform is contacted until the relevant authorization is given in writing. Outreach scripts in this plan are drafts |
+| No mystery shopping | The response-time audit is NOT AUTHORIZED until explicitly approved |
+| No live data or live messages | No sensitive customer or patient data is processed and no live marketing message is sent before COMPLIANCE-GATE.md is cleared |
+| No compliance claims | The product is not described as HIPAA compliant or as compliant with any law without verification and legal review |
+| No pull requests or merges | Not without explicit instruction |
 
 ## 3. Labels used
 
@@ -45,7 +68,7 @@ Same scheme as the research report. FACT means a named source published it. ESTI
 | E. Scorecard | One tracker updated weekly | Whole phase | All gates |
 | Paid pilots | 5 to 10 spas, 90 days each | Months 2 to 5 | Gates 6 and 7 |
 
-Timings are ASSUMPTIONS and count from the day Gate 0 is approved.
+Timings are ASSUMPTIONS at the recommended pace of 18 to 20 hours a week and count from the day each activity is authorized. Weekly availability is UNKNOWN, so these are a sequence, not a schedule.
 
 ## 5. Workstream A: customer discovery
 
@@ -66,6 +89,28 @@ Target 15 to 20 completed interviews. RECOMMENDATION for the sample:
 | Geography | At least 3 states | State texting rules and market maturity differ |
 
 The cap on existing clients matters most. If the only people who see the problem and want the fix are people who already trust CCS, that is evidence of a good agency, not a product.
+
+### Existing CCS med spa clients as a warm pool
+
+CONFIRMED: CCS currently has med spa clients. UNKNOWN: how many, on which booking platforms, in which states. They are a potential warm-contact research pool, useful for learning the workflow in detail and for testing the interview guide. They are weak evidence of independent demand. Safeguards, all CONFIRMED at Gate 0:
+
+1. Maximum 5 warm CCS contacts among 20 interviews.
+2. At least 3 of the 5 proposed paid pilots are spas with no CCS relationship.
+3. Evidence from agency relationships is tallied separately from evidence from strangers, in every table.
+4. Source channel and relationship are recorded for every participant, using the categories below.
+5. Positive comments are not reported as demand. What counts is money already being spent on this job, a paid pilot, and the same operational problem described by several participants without prompting.
+6. The warm list is chosen by a written rule set in advance, not by who is friendliest.
+
+| Relationship code | Meaning | Counts as |
+|---|---|---|
+| WARM-1 | Current CCS client | Warm |
+| WARM-2 | Former CCS client | Warm |
+| WARM-3 | Referred by a CCS client, or a personal contact of anyone at CCS | Warm |
+| COLD-1 | Cold outreach, no prior contact | Cold |
+| COLD-2 | Reached through the response-time audit disclosure | Cold |
+| COLD-3 | Responded to a post in a community or group | Cold |
+
+No existing client has been contacted about this project. Client outreach is NOT AUTHORIZED.
 
 ### Where to find them
 
@@ -90,7 +135,7 @@ I'm researching how independent med spas handle new inquiries, from the first fo
 
 Would you have 20 to 30 minutes in the next two weeks?
 
-Arshad, Clear Choice Systems
+The message is signed by the interview lead. That person is not decided (UNKNOWN), so the draft carries no signature yet.
 
 Rules for outreach once approved: one message and one follow-up, no more. Email and phone only to business contact details the spa publishes. No automated text messages to anyone, since unsolicited marketing texts are exactly the risk this product has to manage.
 
@@ -120,6 +165,8 @@ Log every item with: date read, URL, date posted, reviewer role if stated, produ
 
 ### B2. Response-time audit
 
+Status: NOT AUTHORIZED. The audit is mystery shopping and has no owner yet (UNKNOWN). The method below is prepared for a decision.
+
 RECOMMENDATION: measure the leak directly. No independent study of med spa response times exists.
 
 Method: pick about 50 independent med spas across two or three metros. For each, submit the website contact form once and place one call during business hours that goes to voicemail if unanswered. Record time to first response by channel over 5 business days, and whether the response included a way to book.
@@ -127,6 +174,8 @@ Method: pick about 50 independent med spas across two or three metros. For each,
 Conduct rules: one form and one call per spa, a real name and a real question, no booked appointments that would hold a slot, and no deception beyond not announcing the research up front. After the 5 days, tell each spa what was done and share its result. That disclosure is also the best opening for an interview or pilot conversation.
 
 ### B3. Integration claims to verify
+
+Status: reading public documentation is preparation. Writing to a vendor is vendor contact and is NOT AUTHORIZED today. Claims 7 and 8 are covered in detail by GHL-VERIFICATION-CHECKLIST.md.
 
 The research left conflicts and third-party claims open. Each needs a confirmed answer before any package promises it. "Confirmed" means a written reply from the vendor or the claim observed working in a real account. A sales rep saying yes on a call does not count.
 
@@ -138,7 +187,7 @@ The research left conflicts and third-party claims open. Each needs a confirmed 
 | 4 | Vagaro API and webhooks need Enterprise sales and Vagaro payments | Third-party reported | Written reply from Vagaro |
 | 5 | Aesthetic Record Zapier app is read-only with two triggers | Third-party reported | Open the Zapier app listing and record triggers and actions |
 | 6 | GoHighLevel has no two-way appointment sync with Mangomint, Boulevard, Vagaro or Aesthetic Record | Third-party reported, competitor sources | Check the GoHighLevel marketplace and each platform's integration list |
-| 7 | GoHighLevel HIPAA: Enterprise tier only, or an add-on at a reported $297 a month | Official page lists it under Enterprise, add-on price is third-party unverified | Read inside the CCS agency account, confirm with GoHighLevel support in writing, get the BAA terms |
+| 7 | GoHighLevel HIPAA: Enterprise tier only, or an add-on at a reported $297 a month | UNKNOWN for the CCS account. Official page lists it under Enterprise, add-on price is third-party unverified. Not assumed that CCS is eligible or that an add-on is sufficient | Read inside the CCS agency account (read-only), then written confirmation from GoHighLevel, then legal review of sufficiency |
 | 8 | GoHighLevel plan prices, including the annual prices that looked transposed in the notes | Needs live re-check | Read the live pricing page and the CCS billing page |
 | 9 | Zenoti AI Lead Manager needs the AI Plus package | Official claim, price not public | Low priority, Zenoti spas are not the pilot target |
 | 10 | Third-party AI receptionists that claim booking into Boulevard, Zenoti, Mangomint, Vagaro (Clara AI, AgentZap) | Vendor claim, no independent confirmation | Ask interviewees who use them. Do not contact these vendors posing as a buyer |
@@ -178,7 +227,9 @@ After Gate 4: a one-page description of the offer (a document or PDF, not a new 
 
 FACT (official list prices): Twilio outbound SMS is $0.0083 per segment and Telnyx $0.004, before carrier fees of about $0.0035 to $0.005 per segment. ESTIMATE: about $0.012 to $0.013 per segment all-in at Twilio list.
 
-GoHighLevel bills messaging through its own phone system at its own rates, and with rebilling an agency can mark those up. Those rates were not retrieved in the research. RECOMMENDATION: before Gate 4, read the actual per-segment, per-minute and per-number rates from the CCS agency billing page and replace the proxy figures below.
+GoHighLevel bills messaging through its own phone system at its own rates, and with rebilling an agency can mark those up. Those rates were not retrieved in the research and the CCS plan is UNKNOWN. RECOMMENDATION: before Gate 4, read the actual per-segment, per-minute and per-number rates from the CCS agency billing page (GHL-VERIFICATION-CHECKLIST.md part C) and replace the proxy figures below.
+
+**SMS overage rate: DEFERRED, not approved.** No overage rate is recommended in this plan. A rate can be proposed only after five things are documented: actual LC Phone and SMS charges for the CCS account, segment-based billing rules and carrier fees, A2P 10DLC registration and campaign costs as GoHighLevel charges them, expected usage per location, and gross margin at the package prices. All five are UNKNOWN today. The figures in the table below are proxies for planning and must not be quoted to a customer.
 
 | Cost line | Capture | Convert | Convert plus | Label |
 |---|---|---|---|---|
@@ -189,13 +240,17 @@ GoHighLevel bills messaging through its own phone system at its own rates, and w
 | Email sends | Negligible | Negligible | Negligible | ASSUMPTION |
 | Variable cost before labour | About $14 to $23 | About $26 to $36 | About $38 to $49 | ESTIMATE |
 
-One-time per spa: 10DLC brand registration and campaign vetting, $19.50 on the Telnyx schedule (official) to about $61 on the Twilio schedule (third-party unverified).
+One-time per spa: 10DLC brand registration and campaign vetting, $19.50 on the Telnyx schedule (official) to about $61 on the Twilio schedule (third-party unverified). What GoHighLevel itself charges CCS for registration and campaigns is UNKNOWN and comes from the checklist.
+
+Expected usage per location is UNKNOWN. The caps in the table assume 5 to 10 segments per lead across the cadence, which is an ESTIMATE with no measured basis. Aggregate segment counts from existing sub-accounts (checklist item C17, counts only, no contact data) would give a first rough guide, and the pilots would give the real figure.
 
 Two things to check that the research flagged but did not resolve. First, a 160-character text is one segment, but one emoji or smart quote switches the encoding and a long message can become three or four segments, so cadence copy has to be written to segment limits. Second, med spa content (injectables, weight-loss drugs) may sit close to carrier restricted categories. Read the carrier content policy before writing templates.
 
 ### Consent and compliance requirements
 
 Research, not legal advice. Every row needs counsel before a pilot spa goes live.
+
+**Status: BLOCKED.** CCS has no lawyer for US messaging and health-data compliance. COMPLIANCE-GATE.md sets out the blocker, the data the product would handle and the questions for counsel. Until it is cleared, no live message is sent, no sensitive data is processed, and nothing describes the product as HIPAA compliant.
 
 | Requirement | What the offer has to do | Status |
 |---|---|---|
@@ -206,7 +261,7 @@ Research, not legal advice. Every row needs counsel before a pilot spa goes live
 | Opt-out | STOP honoured immediately across all cadences. FCC revocation rules were rewritten in September 2026 and the effective date is disputed in the sources | Counsel to confirm current rule |
 | Quiet hours | No automated texts outside 8am to 9pm in the lead's local time. Florida and other states are stricter in places | Design rule, counsel to confirm states |
 | Texas SB 140 | Texts are covered by telephone solicitation law. A reported settlement exempts consent-based texts from registration and bond | Counsel to confirm before any Texas pilot |
-| HIPAA | Whether a given med spa is a covered entity is disputed. A lead record naming a person and a treatment is sensitive either way. Safe design: act as a business associate, sign a BAA with the spa, and have a BAA chain to GoHighLevel | Blocked until claim 7 in section 6 is confirmed |
+| HIPAA | Whether a given med spa is a covered entity is disputed. A lead record naming a person and a treatment is sensitive either way. A candidate design is to act as a business associate with agreements down the vendor chain. Whether that is required, and whether GoHighLevel supports it for the CCS account, is UNKNOWN | BLOCKED until claim 7 in section 6 is confirmed in writing and a lawyer has reviewed sufficiency |
 | Health data outside HIPAA | FTC Health Breach Notification Rule and Washington My Health My Data Act may apply where HIPAA does not | Counsel to confirm |
 | Ad platform data | No conversion events with treatment detail sent back to Meta or Google during the pilot | Design rule |
 | Message content | No treatment detail, results claims or pricing promises in automated texts. First reply acknowledges and offers the booking link | Design rule |
@@ -247,40 +302,45 @@ Anything outside the package is logged as a custom request in the scorecard, not
 
 ### Delivery cost per customer
 
-ESTIMATE, steady state, per spa per month. Labour is costed at an assumed $40 an hour loaded rate, which is a stand-in. Replace it with the real CCS figure.
+ESTIMATE, steady state, per spa per month. **This model is illustrative and cannot be used to judge Gate 4 or to set an overage rate.** Three of its inputs are UNKNOWN: the real CCS labour rate (the $40 an hour is a stand-in, not an answer CCS gave), the real GoHighLevel messaging rates (Twilio list prices are used as a proxy), and the CCS GoHighLevel plan (the $497 tier is used as a stand-in).
 
 | Line | Capture $197 | Convert $297 | Convert plus $497 |
 |---|---|---|---|
-| Messaging and telecom | $14 to $23 | $26 to $36 | $38 to $49 |
-| Support labour | $20 | $40 | $100 |
-| Onboarding labour, 3.5 hours spread over 12 months | $12 | $12 | $12 |
-| Platform cost share, $497 a month over 10 spas | $50 | $50 | $50 |
-| HIPAA add-on share, reported $297 a month over 10 spas, unverified | $30 | $30 | $30 |
-| Total | $126 to $135 | $158 to $168 | $230 to $241 |
-| Contribution margin | About 31% to 36% | About 43% to 47% | About 52% to 54% |
+| Messaging and telecom, proxy rates | $14 to $23 | $26 to $36 | $38 to $49 |
+| Support labour, stand-in rate | $20 | $40 | $100 |
+| Onboarding labour, 3.5 hours spread over 12 months, stand-in rate | $12 | $12 | $12 |
+| Platform cost share, stand-in of $497 a month over 10 spas | $50 | $50 | $50 |
+| HIPAA-related cost | UNKNOWN | UNKNOWN | UNKNOWN |
+| Total excluding HIPAA-related cost | $96 to $105 | $128 to $138 | $200 to $211 |
+| Contribution margin excluding HIPAA-related cost | About 47% to 51% | About 54% to 57% | About 58% to 60% |
 
-Three readings of that table. The platform and HIPAA shares fall fast with scale: at 50 spas they drop from $80 to $16 per spa and Convert moves to about 65% margin. If CCS already pays for the $497 tier for its agency work, the platform line is not an added cost. And Capture at $197 is thin at pilot scale, which is itself a finding: it may only make sense as a self-serve tier with near-zero support.
+Change from the first version of this plan: that version included a "HIPAA add-on share" of $30 per spa, from a third-party report of a $297 a month add-on. It is now UNKNOWN, because it is not established that an add-on is available on the CCS plan, what it costs, or that it would be sufficient. For reference only, if a cost of that size did apply, margins would fall to about 31% to 36%, 43% to 47% and 52% to 54%.
+
+Three readings of that table. The platform share falls fast with scale: at 50 spas it drops from $50 to $10 per spa. If CCS already pays for a plan that can deliver the pilot, the platform line is not an added cost, and if it does not, the line could be higher. And Capture at $197 is the thinnest package at pilot scale, which is itself a finding: it may only make sense as a self-serve tier with near-zero support.
 
 Not in the table because no figure exists yet: sales time per closed customer, payment processing fees, legal fees, insurance, refunds. The pilots measure the first one.
 
 ## 9. Spending that needs separate approval
 
-Nothing here has been bought or committed. Each line is a request to consider at the gate shown.
+**Status of every line: NOT AUTHORIZED.** The validation budget is UNKNOWN. Nothing here has been bought or committed. Each line is a request to consider at the gate shown. Budget levels and what can be done at no cost are in GATE-0-OPEN-ITEMS.md section 4.
 
 | Item | Amount | Label | Needed by |
 |---|---|---|---|
 | AmSpa State of the Industry report | $995 as reported in the notes, confirm at purchase | Third-party unverified | Gate 1, optional |
-| Interview thank-you gifts, 20 at about $50 | About $1,000 | Estimate | Gate 0 |
-| Legal review: consent language, HIPAA posture, BAA, state texting rules | Not found, must be quoted | None | Gate 4 |
-| GoHighLevel $497 tier, if CCS is not already on it | $497 a month | Official, re-check live | Gate 4 |
-| GoHighLevel HIPAA add-on | Reported $297 a month | Third-party unverified | Gate 4 |
-| 10DLC registration per pilot spa | $19.50 to about $61 one-time, $1.50 to $10 a month | Official and third-party | Gate 5 |
-| Messaging usage during pilots | About $14 to $49 per spa per month | Estimate | Gate 5 |
+| Interview thank-you gifts, 20 at about $50 | About $1,000 | Estimate | Gate 0, optional |
+| Legal review: consent language, health-data posture, state texting rules, guarantee wording | Not found, must be quoted | None | Gate 4, required |
+| GoHighLevel plan change, if the current plan cannot deliver the pilot | UNKNOWN until the checklist is run | UNKNOWN | Gate 4 |
+| GoHighLevel HIPAA-related cost, if any applies | UNKNOWN. Reported $297 a month is third-party unverified | UNKNOWN | Gate 4 |
+| 10DLC registration per pilot spa | $19.50 to about $61 one-time, $1.50 to $10 a month on proxy schedules | Official and third-party, proxy | Gate 5 |
+| Messaging usage during pilots | About $14 to $49 per spa per month on proxy rates | Estimate | Gate 5 |
 
 ## 10. Timeline
 
+This is a sequence at the recommended pace, not a schedule. Weekly availability is UNKNOWN and no start date exists. At the minimum workable pace of 8 to 10 hours a week the pre-pilot work takes about 10 to 12 weeks (ESTIMATE, see GATE-0-OPEN-ITEMS.md section 3).
+
 | Week | Work |
 |---|---|
+| Before week 1 | Close Gate 0: run the read-only GHL checklist, name the owners, set time and budget, agree thresholds |
 | 0 | Gate 0: approve this plan, agree thresholds, approve or decline the spending lines |
 | 1 to 2 | Desk research on owner voice. Integration verification requests sent. Interview recruiting starts. Audit list built |
 | 2 to 4 | Interviews. Response-time audit runs. Real GoHighLevel rates read from the agency account |
@@ -303,3 +363,6 @@ Nothing here has been bought or committed. Each line is a request to consider at
 | Baseline is missing, so improvement cannot be shown | Two-week baseline is a condition of the pilot |
 | Compliance shortcut under time pressure | Gate 4 is a hard stop with written sign-off |
 | Thresholds moved after the evidence arrives | Thresholds agreed in writing at Gate 0 |
+| Warm-client enthusiasm read as market demand | Relationship code on every record, separate tallies, cold-only pass lines at Gates 2 and 5 |
+| No owner, no time, no budget | Gate 0 stays open until all three are set. The plan does not start on assumptions |
+| A compliance claim made before review | Representations rule in COMPLIANCE-GATE.md |

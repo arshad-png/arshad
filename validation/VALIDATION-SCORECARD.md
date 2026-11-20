@@ -1,8 +1,39 @@
 # Validation scorecard
 
-Prepared 2026-11-20. Status: empty template for review. No data has been collected. Empty cells are to be filled as evidence arrives.
+Prepared 2026-11-20. Updated 2026-11-20 with Gate 0 answers. Status: empty template. No data has been collected and no data collection is authorized. Empty cells are to be filled as evidence arrives.
 
-Update weekly once Gate 0 is approved. Record counts as well as percentages. With samples this small, 3 of 5 and 60% are not the same strength of evidence.
+## 0. Gate 0 readiness
+
+Gate 0 is NOT PASSED. This table is the only part of the scorecard with entries.
+
+| Item | Status | Detail |
+|---|---|---|
+| CCS has med spa clients | CONFIRMED | Count, platforms, states UNKNOWN |
+| CCS GoHighLevel plan | UNKNOWN | GHL-VERIFICATION-CHECKLIST.md not yet run |
+| Interview and audit owner | UNKNOWN | |
+| Decision owner for gates | UNKNOWN | |
+| US messaging and health-data lawyer | BLOCKED | None exists. Engagement NOT AUTHORIZED |
+| Pilot geography | CONFIRMED | United States. States in scope UNKNOWN |
+| Weekly time available | UNKNOWN | |
+| Validation budget | UNKNOWN | No spending authorized |
+| Loaded labour rate | UNKNOWN | |
+| Product name | UNKNOWN | |
+| Thresholds in section 1 agreed | UNKNOWN | Not yet reviewed by the owner |
+| 30-day money-back guarantee | APPROVED IN PRINCIPLE, CONDITIONAL | Needs defined terms and legal review |
+| 12-month price lock | APPROVED IN PRINCIPLE, CONDITIONAL | Needs final commercial terms |
+| SMS overage rate | DEFERRED | Five cost inputs UNKNOWN |
+
+## Evidence rules
+
+CONFIRMED at Gate 0.
+
+1. Every interview, prospect and pilot row carries a source channel and a relationship code: WARM-1 current CCS client, WARM-2 former CCS client, WARM-3 referral from a CCS client or personal contact, COLD-1 cold outreach, COLD-2 reached through the audit disclosure, COLD-3 community response.
+2. Warm and cold results are reported side by side. A blended figure is never reported alone.
+3. Positive interview comments are not counted as demand anywhere in this scorecard. Demand metrics count existing spend, unprompted problem statements, pilot requests and payments.
+4. A problem is recorded as repeated only when it is raised unprompted by at least 5 participants, at least 3 of them cold (ASSUMPTION, to be agreed).
+5. Evidence from existing agency relationships is labelled as such and cannot by itself pass Gate 2, Gate 5 or Gate 7 outcome A.
+
+Update weekly once data collection is authorized. Record counts as well as percentages. With samples this small, 3 of 5 and 60% are not the same strength of evidence.
 
 ## 1. Pass and fail criteria
 
@@ -33,6 +64,9 @@ D8 and D9: either one passing is enough. Both failing means independents already
 | W3 | Qualified conversations needed per paid pilot | 20 or fewer | More than 40 | Offer test log |
 | W4 | Median "starts to feel expensive" price in interviews | $297 or higher | Below $197 | Question 34 |
 | W5 | Refunds requested under the 30-day guarantee | 1 or fewer | 3 or more | Pilot log |
+| W6 | Pilots counted toward the five that are current CCS clients already buying lead follow-up from CCS | 0 | 1 or more | Pilot log |
+
+W2 restates the Gate 0 safeguard: at least 3 of the 5 proposed paid pilots have no CCS relationship (relationship codes COLD-1 to COLD-3). W5 applies only if the guarantee, which is CONDITIONAL, is offered.
 
 ### Outcome
 
@@ -78,35 +112,67 @@ This block answers the question the phase exists for: a business or an agency se
 
 | # | Metric | Pass | Fail |
 |---|---|---|---|
-| C1 | Written legal sign-off on consent language and data handling | Received before first pilot | Not received |
-| C2 | GoHighLevel HIPAA posture and BAA confirmed in writing | Received before first pilot | Not received |
+| C0 | Qualified US lawyer for messaging and health-data compliance engaged | Engaged before Gate 4 | None engaged. Current state: none exists |
+| C1 | Written legal sign-off on consent language, opt-out handling, data handling, states in scope and pilot terms | Received before first pilot | Not received |
+| C2 | GoHighLevel HIPAA-related scope confirmed in writing by the vendor for the CCS account, and reviewed by the lawyer for sufficiency | Both received before first pilot | Either missing. An add-on being available does not pass this |
+| C5 | Compliance statements in any material | Only wording approved by the lawyer | Any claim of HIPAA or other legal compliance made without that approval |
 | C3 | 10DLC approved for each pilot spa before any text is sent | 100% | Any text sent before approval |
 | C4 | Consent record exists for every lead that received an automated text | 100% on a monthly sample of 20 | Any missing |
 
-Any fail in this block stops the pilots until fixed. It is not weighed against the others.
+Any fail in this block stops the pilots until fixed. It is not weighed against the others. Current state: C0, C1 and C2 are all unmet, so live pilots are BLOCKED. See COMPLIANCE-GATE.md.
+
+### Cost inputs that must be documented
+
+Not pass or fail metrics. P6, P7 and any overage rate cannot be judged until every row is filled from a primary source.
+
+| Input | Value | Source type | Date |
+|---|---|---|---|
+| CCS GoHighLevel plan name and price | UNKNOWN | | |
+| SMS charge per outbound segment, CCS account | UNKNOWN | | |
+| SMS charge per inbound segment, CCS account | UNKNOWN | | |
+| Carrier fees per segment | UNKNOWN | | |
+| Segment billing rules | UNKNOWN | | |
+| 10DLC brand registration charge | UNKNOWN | | |
+| 10DLC campaign registration and monthly charge | UNKNOWN | | |
+| Number rental and voice minute charges | UNKNOWN | | |
+| HIPAA-related cost, if any applies | UNKNOWN | | |
+| Loaded labour rate for onboarding and support | UNKNOWN | | |
+| Expected segments per location per month | UNKNOWN | | |
+| Gross margin at $197, $297, $497 on the inputs above | UNKNOWN | | |
+
+Source types are ACCOUNT, OFFICIAL DOC, WRITTEN VENDOR and THIRD-PARTY, as defined in GHL-VERIFICATION-CHECKLIST.md. A THIRD-PARTY value does not fill a row.
 
 ## 2. Interview tracker
 
 One row per interview. Full notes live in `validation/interviews/`.
 
-| No. | Date | Role | State | Staff | Platform | Warm or cold | Inquiries per month | Follow-up in top 3 unprompted | Who owns follow-up | Current spend on this job | Feels expensive at | Package chosen | Wants pilot |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| | | | | | | | | | | | | | |
+| No. | Date | Interviewer | Role | State | Staff | Platform | Source channel | Relationship code | Warm or cold | Inquiries per month | Follow-up in top 3 unprompted | Who owns follow-up | Current spend on this job | Feels expensive at | Package chosen | Wants pilot |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| | | | | | | | | | | | | | | | | |
 
 ### Interview tally
 
-| Measure | Count | Of | Share |
+Every measure is counted three ways. The warm column is evidence about the agency relationship. The cold column is evidence about independent demand.
+
+| Measure | All | Warm (WARM-1 to WARM-3) | Cold (COLD-1 to COLD-3) |
 |---|---|---|---|
 | Completed | | | |
-| Cold contacts | | | |
-| Follow-up in top 3 unprompted, all | | | |
-| Follow-up in top 3 unprompted, cold only | | | |
+| Follow-up in top 3 unprompted | | | |
 | Paying $200 or more today for part of this job | | | |
 | Chose Capture | | | |
 | Chose Convert | | | |
 | Chose Convert plus | | | |
 | Chose none | | | |
 | Wants pilot follow-up | | | |
+| Said something positive about the idea | Not counted | Not counted | Not counted |
+
+The last row is there on purpose. Positive comments are not tallied.
+
+### Repeated operational problems
+
+| Problem, in their words | Raised unprompted by interview numbers | Total | Of which cold | Counts as repeated (5 or more, at least 3 cold) |
+|---|---|---|---|---|
+| | | | | |
 
 ### Problems raised that nobody asked about
 
@@ -157,9 +223,9 @@ Claim numbers refer to VALIDATION-PLAN.md section 6.
 
 ### Per prospect
 
-| Prospect no. | Warm or cold | Source channel | Platform | Setup fee arm | Commitment arm | Package chosen | Outcome | Main objection | Sales hours |
-|---|---|---|---|---|---|---|---|---|---|
-| | | | | | | | | | |
+| Prospect no. | Relationship code | Warm or cold | Source channel | Platform | Setup fee arm | Commitment arm | Package chosen | Outcome | Main objection | Sales hours |
+|---|---|---|---|---|---|---|---|---|---|---|
+| | | | | | | | | | | |
 
 ### Objection tally
 
@@ -178,7 +244,7 @@ Claim numbers refer to VALIDATION-PLAN.md section 6.
 
 One row per pilot spa.
 
-| Pilot no. | Start | Package | Price | Platform | Warm or cold | Baseline leads per week | Baseline response time | Baseline booked per 100 | Onboarding hours | Day 30 status | Day 60 status | Day 90 status |
+| Pilot no. | Start | Package | Price | Platform | Relationship code | Baseline leads per week | Baseline response time | Baseline booked per 100 | Onboarding hours | Day 30 status | Day 60 status | Day 90 status |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
 | | | | | | | | | | | | | |
 
@@ -223,7 +289,7 @@ The limitations that recur across spas are the only justified input to a future 
 |---|---|---|---|---|---|---|
 | | | | | | | |
 
-Candidates to watch for, from the research (not yet observed): no read of booked or showed status from the booking platform, HIPAA posture and cost, reporting that cannot show cost per showed consult without manual input, per-spa 10DLC lead time, Meta lead form consent handling, owners seeing the tool as an agency CRM.
+Candidates to watch for, from the research (not yet observed): no read of booked or showed status from the booking platform, HIPAA-related scope and cost (UNKNOWN for the CCS account), reporting that cannot show cost per showed consult without manual input, per-spa 10DLC lead time, Meta lead form consent handling, owners seeing the tool as an agency CRM.
 
 ## 10. Threshold change log
 
